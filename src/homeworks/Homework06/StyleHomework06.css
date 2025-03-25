@@ -1,0 +1,9 @@
+.homework6-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-bottom: 0 20px 4 px rgba(0, 0, 0, 0,1)
+}
+
