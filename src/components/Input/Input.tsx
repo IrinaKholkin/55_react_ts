@@ -1,16 +1,7 @@
-import "./StylesInput.css";
+import './styles.css';
 
-interface InputProps {
-    placeholder: any,
-    name: any;
-}
-
-// // function Button() {
-//   return <button className="main-button">Send</button>
-// }
-
-function Input (InputProps: placeholder, InputPops: name) {
-    return <input className="custom-input" type="text"/>
+function Input () {
+    return <input className="input-component" name="test" placeholder="Enter text"/>
 };
 
 export default Input;
