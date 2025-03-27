@@ -1,11 +1,11 @@
 import './style.css'
 import { ProductProps } from "./types";
 
-function Product ({name, price}: ProductProps) {
+function Product ({productName, productPrice}: ProductProps) {
     return (
         <div className="product-container">
-            <h2>{name}</h2>
-            <div>{price}</div>
+            <div>Product: {productName}</div>
+            <div>Price: {productPrice}</div>
         </div>
     )
 }
