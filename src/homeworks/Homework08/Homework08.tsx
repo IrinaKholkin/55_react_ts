@@ -19,7 +19,7 @@ const toogleShowPassword = () => {
         <h2>Change password</h2>
         <Input name="passwordInput" label="Password" placeholder="Enter your password" type="password" value={password} onChange={passwordChangeHandle}/>
         <Button name="SHOW PASSWORD" onClick={toogleShowPassword}></Button>
-        {showPassword && <div className="password-display">{password}</div>}
+        {showPassword && <div>{password}</div>}
         </div>);
     }
         
