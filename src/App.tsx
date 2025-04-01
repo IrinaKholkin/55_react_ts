@@ -9,8 +9,10 @@ import GlobalStyles from "./styles/GlobalStyles"
 // import Lesson08 from "./lessons/Lesson08/Lesson08"
 // import Lesson09 from "./lessons/Lesson09/Lesson09"
 // import Lesson10 from "./lessons/Lesson10/Lesson10"
+// import Lesson11 from "./lessons/Lesson11/Lesson11"
 
-import Lesson11 from "./lessons/Lesson11/Lesson11"
+
+import Homework11 from "./homeworks/Homework11/Homework11"
 
 // Импорт домашней роботы
 // import Homework07 from "./homeworks/HomeWork07/Homework07"
@@ -42,7 +44,8 @@ function App() {
       {/* <Homework09AndLesson/> */}
       {/* <Lesson10/> */}
       {/* <Homework10/> */}
-      <Lesson11/>
+      {/* <Lesson11/> */}
+      <Homework11/>
     </>
   )
 }
