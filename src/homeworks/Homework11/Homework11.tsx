@@ -5,7 +5,7 @@ import Input from "../../components/Input/Input";
 function Homework11() {
   const [inputValue, setInputValue] = useState<string>("");
   const [secondInputValue, setSecondInputValue] = useState<string>("");
-  const [changeCount, setChangeCount] = useState(0);
+  const [changeCount, setChangeCount] = useState<number>(0);
 
   useEffect(() => {
     if (inputValue !== "") {
