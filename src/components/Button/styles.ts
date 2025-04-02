@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+
 interface MainButtonStyledProps {
   danger?: boolean
 }
@@ -12,4 +13,8 @@ export const MainButton = styled.button<MainButtonStyledProps>`
   font-size: 26px;
   color: white;
   cursor: pointer;
+
+  &:disabled {
+    background-color: gray;
+  }
 `

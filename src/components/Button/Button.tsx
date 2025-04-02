@@ -10,6 +10,7 @@ import { ButtonProps } from './types';
 // }
 
 function Button({name, onClick, disabled = false, type = 'submit', danger } : ButtonProps)  {
+  
   return  (
   <MainButton 
   onClick={onClick} 
