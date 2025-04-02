@@ -12,7 +12,8 @@ import GlobalStyles from "./styles/GlobalStyles"
 // import Lesson10 from "./lessons/Lesson10/Lesson10"
 // import Lesson11 from "./lessons/Lesson11/Lesson11"
 
-import Consultation05 from "./consultations/Consultation05/Consultation05"
+
+import Lesson12 from "./lessons/Lesson12/Lesson12"
 
 
 // Импорт домашней роботы
@@ -21,9 +22,11 @@ import Consultation05 from "./consultations/Consultation05/Consultation05"
 // import Homework09 from "./homeworks/Homework09/Homework09"
 // import Homework09AndLesson from "./homeworks/Homework09/Homework09_and_Lesson"
 // import Homework10 from "./homeworks/Homework10/Homework10"
+// import Homework11Lesson from "./homeworks/Homework11Lesson/Homework11Lesson"
 
 // Импорт консультаций
 // import Consultation04 from "./consultations/Consultation04/Consultation04"
+// import Consultation05 from "./consultations/Consultation05/Consultation05"
 
 
 
@@ -46,7 +49,9 @@ function App() {
       {/* <Lesson10/> */}
       {/* <Homework10/> */}
       {/* <Lesson11/> */}
-      <Consultation05/>
+      {/* <Consultation05/> */}
+      {/* <Homework11Lesson/> */}
+      <Lesson12/>
     </>
   )
 }
