@@ -34,6 +34,7 @@ function Lesson12() {
       setIsLoading(false);
     }
   };
+  // первый факт запускается благодаря useEffect
   useEffect(() => {
     getJoke();
   }, []);
