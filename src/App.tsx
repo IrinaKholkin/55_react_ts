@@ -50,7 +50,7 @@ function App() {
       {/* <Homework11 /> */}
       {/* <Lesson12 /> */}
       {/* <Homework12 /> */}
-      <Lesson14 />
+      <Lesson14/>
     </>
   )
 }
