@@ -4,13 +4,14 @@ import { FormWrapper, InputGroup, StyledError, StyledLabel, SubmitButton } from 
 
 const validationSchema = Yup.object ({
     fullName: Yup.string()
+    .required('Обязательное поле')
     .min(5, 'Минимум 5 символов')
     .max(50, 'Максимум 50 символов')
-    .required('Обязательное поле'),
+    ,
     age: Yup.number()
+    .required('Обязательное поле')
     .min(18, 'Минимум 18 лет')
     .max(80, 'Максимум 80 лет')
-    .required('Обязательное поле')
 });
 
 const initialValues = {
