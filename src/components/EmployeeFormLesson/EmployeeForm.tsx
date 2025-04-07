@@ -43,10 +43,7 @@ function EmployeeForm() {
       console.table(values)
     }
   })
-
   console.log(formik);
-
-
   return (
     <EmployeeFormComponent onSubmit={formik.handleSubmit}>
       <Title>Employee form</Title>
