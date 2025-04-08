@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom"
 
 import {
-  LayoutComponent,
-  Header,
-  LogoText,
-  Nav,
-  Main,
+  LayoutComponent, 
+  Header, 
+  LogoText, 
+  Nav, 
+  Main, 
   Footer
 } from "./styles"
 import { LayoutProps } from "./types"
@@ -20,6 +20,7 @@ function Layout({children} : LayoutProps) {
           по маршруту через prop to */}
           <NavLink to='/'>Home</NavLink>
           <NavLink to='/about'>About</NavLink>
+          <NavLink to='/course'>Course</NavLink>
         </Nav>
       </Header>
       <Main>{children}</Main>
