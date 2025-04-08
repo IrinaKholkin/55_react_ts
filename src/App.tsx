@@ -1,3 +1,8 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+
+import Layout from "./components/Layout/Layout"
+import About from "./pages/About/About"
+import Home from "./pages/Home/Home"
 import GlobalStyles from "./styles/GlobalStyles"
 
 //Lessons imports
@@ -13,7 +18,7 @@ import GlobalStyles from "./styles/GlobalStyles"
 // import Lesson11 from "./lessons/Lesson11/Lesson11"
 // import Lesson12 from "./lessons/Lesson12/Lesson12"
 // import Lesson13 from "./lessons/Lesson13/Lesson13"
-import Lesson13Teacher from "./lessons/Lesson13Teacher/Lesson13Teacher"
+// import Lesson13Teacher from "./lessons/Lesson13Teacher/Lesson13Teacher"
 // import Lesson14 from "./lessons/Lesson14/Lesson14"
 
 
@@ -36,31 +41,20 @@ import Lesson13Teacher from "./lessons/Lesson13Teacher/Lesson13Teacher"
 function App() {
 
   return (
-    <>
+    //BrowserRouter - глобальная обёртка для всего приложения,
+    // которая позволяет использовать маршрутизацию
+    <BrowserRouter>
       <GlobalStyles />
-      {/* <Task6 /> */}
-      {/* <Lesson06 /> */}
-      {/* <Homework06 /> */}
-      {/* <Lesson07 /> */}
-      {/* <Homework07/> */}
-      {/* <Lesson08/> */}
-      {/* <Consultation04 /> */}
-      {/* <Homework08 /> */}
-      {/* <Lesson09 /> */}
-      {/* <Homework09 /> */}
-      {/* <Lesson10 /> */}
-      {/* <Homework10 /> */}
-      {/* <Lesson11 /> */}
-      {/* <Homework11 /> */}
-      {/* <Lesson12 /> */}
-      {/* <Homework12 /> */}
-      {/* <Lesson14 /> */}
-      {/* <Lesson13 /> */}
-      <Lesson13Teacher/>
-      {/* <Homework14/> */}
-      {/* <Homework14Lesson/> */}
-
-    </>
+      <Layout>
+        {/* Routes - обертка, которая собирает все маршруты приложения */}
+        <Routes>
+          {/* Route - компонент библиотеки, в который передаётся маршрут и тот компонент (страницу),
+          который должен быть вызван, если выполнен переход по этому маршруту */}
+          <Route path='/' element={<Home />}/>
+          <Route path='/about' element={<About />}/>
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   )
 }
 
