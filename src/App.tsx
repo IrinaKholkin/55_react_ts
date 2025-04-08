@@ -32,7 +32,8 @@ import GlobalStyles from "./styles/GlobalStyles"
 // import Homework12 from "./homeworks/Homework12/Homework12"
 // import Homework14 from "./homeworks/Homework14/Homework14"
 // import Homework14Lesson from "./homeworks/Homework14Lesson/Homework14Lesson"
-
+import Homework15 from "./homeworks/Homework15/Homework15"
+// import Homework15Lesson from "./homeworks/Homework15Lesson/Homework15Lesson"
 //Consultations imports
 // import Consultation04 from "./consultations/Consultation04/Consultation04"
 // import Consultation05 from "./consultations/Consultation05/Consultation05"
@@ -45,6 +46,31 @@ function App() {
     // которая позволяет использовать маршрутизацию
     <BrowserRouter>
       <GlobalStyles />
+      {/* <Task6 /> */}
+      {/* <Lesson06 /> */}
+      {/* <Homework06 /> */}
+      {/* <Lesson07 /> */}
+      {/* <Homework07/> */}
+      {/* <Lesson08/> */}
+      {/* <Consultation04 /> */}
+      {/* <Homework08 /> */}
+      {/* <Lesson09 /> */}
+      {/* <Homework09 /> */}
+      {/* <Lesson10 /> */}
+      {/* <Homework10 /> */}
+      {/* <Lesson11 /> */}
+      {/* <Homework11 /> */}
+      {/* <Lesson12 /> */}
+      {/* <Homework12 /> */}
+      {/* <Lesson14 /> */}
+      {/* <Lesson13 /> */}
+      {/* <Lesson13Teacher/> */}
+      {/* <Homework14/> */}
+      {/* <Homework14Lesson/> */}
+      <Homework15/>
+      {/* <Homework15Lesson/> */}
+
+    </>
       <Layout>
         {/* Routes - обертка, которая собирает все маршруты приложения */}
         <Routes>
@@ -54,7 +80,7 @@ function App() {
           <Route path='/about' element={<About />}/>
         </Routes>
       </Layout>
-    </BrowserRouter>
+        </BrowserRouter>
   )
 }
 
