@@ -1,3 +1,8 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+
+import Layout from "./components/Layout/Layout"
+import About from "./pages/About/About"
+import Home from "./pages/Home/Home"
 import GlobalStyles from "./styles/GlobalStyles"
 
 //Lessons imports
@@ -37,7 +42,9 @@ import Homework15 from "./homeworks/Homework15/Homework15"
 function App() {
 
   return (
-    <>
+    //BrowserRouter - глобальная обёртка для всего приложения,
+    // которая позволяет использовать маршрутизацию
+    <BrowserRouter>
       <GlobalStyles />
       {/* <Task6 /> */}
       {/* <Lesson06 /> */}
@@ -64,6 +71,16 @@ function App() {
       {/* <Homework15Lesson/> */}
 
     </>
+      <Layout>
+        {/* Routes - обертка, которая собирает все маршруты приложения */}
+        <Routes>
+          {/* Route - компонент библиотеки, в который передаётся маршрут и тот компонент (страницу),
+          который должен быть вызван, если выполнен переход по этому маршруту */}
+          <Route path='/' element={<Home />}/>
+          <Route path='/about' element={<About />}/>
+        </Routes>
+      </Layout>
+        </BrowserRouter>
   )
 }
 
