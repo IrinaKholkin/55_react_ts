@@ -29,6 +29,6 @@ cursor: pointer;
 // margin-bottom: 10px;
 // `
 
-export const form = styled.div`
-margin-bottom: 10px;
-`
+// export const form = styled.form`
+// margin-bottom: 10px;
+// `

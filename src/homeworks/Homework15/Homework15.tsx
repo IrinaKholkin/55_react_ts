@@ -4,7 +4,7 @@ import * as Yup from 'yup';
 import { Label } from "../../components/Input/styles";
 import Input from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
-import { CheckboxWrapper, Homework15Container } from "./styles";
+import { CheckboxWrapper, Homework15Container} from "./styles";
 import { Homework15FormValues } from "./types";
 
 export function Homework15 (){
@@ -26,7 +26,9 @@ export function Homework15 (){
         }, 
 validationSchema: schema,
 onSubmit: (values: Homework15FormValues) => {
-    console.log('Вы успешно вошли'), values;
+    console.log('Вы успешно вошли');
+    console.log(values);
+    
 },
     });
 
@@ -52,9 +54,9 @@ onSubmit: (values: Homework15FormValues) => {
                 onChange={formik.handleChange}
                 error={formik.errors.agreement}
                 />
-                <Label htmlFor="agreement">{""}Privacy and policy</Label>
+                <Label htmlFor="agreement">Privacy and policy</Label>
             </CheckboxWrapper>
-            <Button name="Login" type="submit"></Button>
+            <Button name="Login" type="submit"/>
             </form>
         </Homework15Container>
     )
