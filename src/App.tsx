@@ -27,8 +27,8 @@ import GlobalStyles from "./styles/GlobalStyles"
 // import Homework12 from "./homeworks/Homework12/Homework12"
 // import Homework14 from "./homeworks/Homework14/Homework14"
 // import Homework14Lesson from "./homeworks/Homework14Lesson/Homework14Lesson"
-
-import Homework15 from "./homeworks/Homework15/Homework15"
+// import Homework15 from "./homeworks/Homework15/Homework15"
+import Homework15Lesson from "./homeworks/Homework15Lesson/Homework15Lesson"
 //Consultations imports
 // import Consultation04 from "./consultations/Consultation04/Consultation04"
 // import Consultation05 from "./consultations/Consultation05/Consultation05"
@@ -60,7 +60,8 @@ function App() {
       {/* <Lesson13Teacher/> */}
       {/* <Homework14/> */}
       {/* <Homework14Lesson/> */}
-      <Homework15/>
+      {/* <Homework15/> */}
+      <Homework15Lesson/>
 
     </>
   )

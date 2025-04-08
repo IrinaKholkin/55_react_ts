@@ -28,3 +28,7 @@ cursor: pointer;
 // color: red;
 // margin-bottom: 10px;
 // `
+
+export const form = styled.div`
+margin-bottom: 10px;
+`
