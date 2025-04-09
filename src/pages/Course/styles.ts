@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 
 export const CourseWrapper = styled.div`
   display: flex;
@@ -18,13 +18,6 @@ export const Title = styled.div`
  margin-bottom: 40px;
 `;
 
-export const TopicList = styled.ul`
-list-style: none;
-padding: 0;
-width: 80%;
-max-width: 800px;
-`;
-
 export const TopicItem = styled.li`
 padding: 15px 20px;
 margin: 10px 0;
@@ -34,17 +27,17 @@ color: white;
 font-size: 18px;
 `;
 
-export const BackLink = styled(NavLink)`
-margin-top: 40px;
-padding: 12px 30px;
-background-color: rgb(253, 247, 62);
-color: #000;
-text-decoration: none;
-border-radius: 4px;
-font-weight: bold;
-font-size: 18px;
+// export const BackLink = styled(NavLink)`
+// margin-top: 40px;
+// padding: 12px 30px;
+// background-color: rgb(253, 247, 62);
+// color: #000;
+// text-decoration: none;
+// border-radius: 4px;
+// font-weight: bold;
+// font-size: 18px;
 
-&:hover {
-    background: white;
-}
-`;
+// &:hover {
+//     background: white;
+// }
+// `;

@@ -1,25 +1,18 @@
-import { BackLink, CourseWrapper, Title, TopicItem, TopicList } from "./styles";
+import { v4 } from "uuid";
+import {  CourseWrapper, Title, TopicItem} from "./styles";
+import { lessonsData } from "./data";
 
 function Course() {
-    const topics = [
-        "React: Props",
-        "React: Components",
-        "React: Map method for component",
-        "React: Object Types for components",
-        "React: Children",
-        "React: Styling Components",
-        "React: re-rendering of components",
-        "React: axios",
-        "React: Formik/Yup"
-    ];
+    const lessons = lessonsData.map((lesson: string) => {
+        return <TopicItem key={v4()}>{lesson}</TopicItem>;
+      });
+    
   return (
     <CourseWrapper>
       <Title>React Lessons
       </Title>
-      <TopicList>
-        {topics.map((topic, index) => (<TopicItem key={index}>{topic}</TopicItem>))}
-      </TopicList>
-      <BackLink to="/">Back to Home</BackLink>
+      {lessons}
+      {/* <BackLink to="/">Back to Home</BackLink> */}
     </CourseWrapper>
   )
 }
