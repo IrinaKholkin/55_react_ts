@@ -1,17 +1,16 @@
-import { ClientsWrapper, CompanyLink } from "./styles";
+import { ClientsPage, Title, StyledLink } from "./styles"
 
-function Clients (){
-
-    return (
-        <ClientsWrapper>
-            <h1>Our Clients</h1>
-            <CompanyLink to='/clients/facebook'>Facebook</CompanyLink>
-            <CompanyLink to='/clients/google'>Google</CompanyLink>
-            <CompanyLink to='/clients/amazon'>Amazon</CompanyLink>
-        </ClientsWrapper>
-    );
+function Clients() {
+  return (
+    <ClientsPage>
+      <Title>Clients page</Title>
+      <StyledLink to='amazon'>Amazon company</StyledLink>
+      <StyledLink to='facebook'>Facebook company</StyledLink>
+      <StyledLink to='google'>Google company</StyledLink>
+    </ClientsPage>
+  )
 }
 
-export default Clients;
+export default Clients
 
 

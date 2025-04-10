@@ -13,7 +13,7 @@ import {
   ButtonContainer
 } from "./styles"
 import { LayoutProps, NavLinkObj } from "./types"
-import { navLinkData } from "./data"
+import { navLinksData } from "./data"
 import Logo from '../../assets/avatar.jpg'
 import Button from "../Button/Button"
 
@@ -27,7 +27,7 @@ const goBack = ()=>{
   navigate(-1)
 }
 
-  const navLinks = navLinkData.map((navLink: NavLinkObj) => {
+  const navLinks = navLinksData.map((navLink: NavLinkObj) => {
     return (
       <StyledNavLink key={v4()} to={navLink.to} style={
         ({ isActive }) => ({ textDecoration: isActive ? 'underline' : 'none' })

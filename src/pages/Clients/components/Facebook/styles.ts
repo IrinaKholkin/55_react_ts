@@ -1,8 +1,18 @@
 import styled from "@emotion/styled";
 
-export const CompanyWrapper = styled.div`
-padding: 40px;
-max-width: 600px;
-margin: 0 auto;
-text-align: center;
-`;
+export const FacebookPage = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  font-size: 30px;
+  `
+
+export const Title = styled.h2`
+ font-size: 36px;
+ color: blueviolet;
+`
+
+export const Description = styled.div`
+  color: burlywood;
+`

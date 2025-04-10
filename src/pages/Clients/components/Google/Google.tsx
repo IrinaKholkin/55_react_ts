@@ -1,23 +1,24 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
+
+import { GooglePage, Description, Title, ButtonContainer } from "./styles"
 import Button from "../../../../components/Button/Button";
-import { CompanyWrapper } from "./styles";
 
-function Google (){
-    const navigate = useNavigate();
+function Google() {
+  const navigate = useNavigate();
 
-    const goToClientsPage = ()=>{
-        navigate('/clients')
-      }
+  const goToFacebookPage = () => {
+    navigate('/clients/facebook')
+  }
 
-    return (
-        <CompanyWrapper>
-            <h2>Google</h2>
-            <p>Industry: Internet</p>
-            <p>Founded: 1998</p>
-            <p>Employees: 182 500+</p>
-            <Button name="Switch to Clients" onClick={goToClientsPage}/>
-        </CompanyWrapper>
-    );
+  return (
+    <GooglePage>
+      <Title>Google company</Title>
+      <Description>Google page description</Description>
+      <ButtonContainer>
+        <Button name='Go to Facebook' onClick={goToFacebookPage} />
+      </ButtonContainer>
+    </GooglePage>
+  )
 }
 
-export default Google;
+export default Google
