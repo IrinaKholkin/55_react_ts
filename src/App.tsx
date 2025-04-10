@@ -10,6 +10,10 @@ import GlobalStyles from "./styles/GlobalStyles"
 import Designer from './pages/Users/components/Designer/Designer'
 import Manager from './pages/Users/components/Manager/Manager'
 import PageNotFound from './pages/PageNotFound/PageNotFound'
+import Clients from './pages/Clients/Clients'
+import Facebook from './pages/Clients/components/Facebook/Facebook'
+import Google from './pages/Clients/components/Google/Google'
+import Amazon from './pages/Clients/components/Amazon/Amazon'
 
 function App() {
 
@@ -30,6 +34,10 @@ function App() {
           <Route path='/users' element={<Users/>}/>
           <Route path='/users/designer' element={<Designer/>}></Route>
           <Route path='/users/manager' element={<Manager/>}></Route>
+          <Route path='/clients' element={<Clients/>}></Route>
+          <Route path='/clients/facebook' element={<Facebook/>}></Route>
+          <Route path='/clients/google' element={<Google/>}></Route>
+          <Route path='/clients/amazon' element={<Amazon/>}></Route>
           {/* path='*' - специальный маршрут, который вызовет переданный компонент в
           том случае, если в маршрутах выше не будет найдено того маршрута,
           к которому обращается пользователь */}
