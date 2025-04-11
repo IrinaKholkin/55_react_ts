@@ -28,7 +28,6 @@ export function BlogManagement (){
     return (
         <BlogContext.Provider value={{message, setMessage}}>
             <BlogManagementWrapper>
-                
             <Input 
             name="blogInput"
             type="text"

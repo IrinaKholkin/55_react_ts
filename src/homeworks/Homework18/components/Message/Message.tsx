@@ -13,7 +13,7 @@ function Message() {
 <MessageWrapper>
     <div>{message}</div>
     <ButtonContainer>
-    <Button name="Delete Post" onClick={handleDelete}/>
+    <Button name="Delete Post" onClick={handleDelete} danger/>
     </ButtonContainer>
 </MessageWrapper>
   );
